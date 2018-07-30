@@ -8,6 +8,7 @@ import { ProductComponent } from './product/product.component';
 import { FormsModule } from '@angular/forms';
 
 import { ProductsComponent } from './products.component';
+import { ProductsService } from './products.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,7 @@ import { ProductsComponent } from './products.component';
     FlexLayoutModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ProductsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
