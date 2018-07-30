@@ -7,13 +7,17 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { ProductComponent } from './product/product.component';
 import { FormsModule } from '@angular/forms';
 
+import { HomeComponent } from './home.component'
 import { ProductsComponent } from './products.component';
 import { ProductsService } from './products.service';
+import { AppRoutingModule } from './app-routing.module';
+
 @NgModule({
   declarations: [
     AppComponent,
     ProductComponent,
-    ProductsComponent
+    ProductsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +29,8 @@ import { ProductsService } from './products.service';
     MatFormFieldModule,
     MatInputModule,
     FlexLayoutModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [ProductsService],
   bootstrap: [AppComponent]
