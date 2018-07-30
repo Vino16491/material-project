@@ -15,6 +15,6 @@ export class ProductComponent implements OnInit {
   }
   onClicked() {
     // this.productClicked.emit();
-    this.productsService.deleteProduct(this.productName)
+    this.productsService.deleteProduct(this.productName);
   }
 }

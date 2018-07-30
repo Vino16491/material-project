@@ -14,5 +14,6 @@ export class ProductsService {
 
     deleteProduct(productName: string){
         this.products = this.products.filter(p=> p!== productName);
+        this.productsUpdated.next(); /* subscri[tion update share */
     }
 }
